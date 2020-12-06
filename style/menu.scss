@@ -108,9 +108,10 @@
     list-style: none;
 
 }
+.pod-menu li #link-view {padding-right: 280px;}
 
 .pod-menu li:hover {background: linear-gradient(90deg, #3cccf9 28%, rgba(13, 13, 13, 0) 100%);;}
-.pod-menu ul a {text-decoration: none; color: white;}
+.pod-menu ul a {text-decoration: none; color: white; width: 100%; height: 100%;}
 .menu-main-info {
     font-size: 13px;
 position: absolute;

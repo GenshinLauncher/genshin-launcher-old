@@ -72,17 +72,18 @@ $("#js-menu").html(`
     <div class="vk-link"><span><a id="link-view" href="https://github.com/genshinlauncher" target="_blank">GITHUB</a></span></div>
     <div class="dop-info">
     <span class="version">  <span id="nowver" style="float: right;"></span></span>
-    <span class="author">by <a href="" id="author"> TheFunnyDay</a></span>
+    <span class="author">by <a href="https://thefunnyday.github.io/" class="author" id="link-view" target="_blank"> TheFunnyDay</a></span>
     </div>
 </div>
 <div class="pod-menu">
 <ul class="pod-menu-list">
 <div style="height: 100px;"></div>
-        <a href="./codes.html"><li>Прокоды</li></a>
-        <a href=""><li>донат</li></a>
-        <a href=""><li>авторы</li></a>
-        <a href="./thanks.html"><li>благодарность</li></a>
-        <li><a href="https://forms.gle/BryYMYjkNoeZ9smP9" id="link-view" target="_blank">сообщить об ошибке</li></a>
+       <a href="./index.html"><li>главная</li></a>
+        <a href="./codes.html"><li>промокоды</li></a>
+        <li><a href="https://www.donationalerts.com/r/tfunnyday_"id="link-view" target="_blank">донат</a></li>
+        <li><a href="https://thefunnyday.github.io/" id="link-view" target="_blank">автор</a></li>
+       <!-- <a href="./thanks.html"><li>благодарность</li></a>--!>
+        <li><a href="https://forms.gle/BryYMYjkNoeZ9smP9" id="link-view" style="padding-right:0;" target="_blank">сообщить об ошибке</li></a>
 </ul>
 `);
 document.querySelector('#burger-menu').addEventListener('click', function (e) {

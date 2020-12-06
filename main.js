@@ -32,7 +32,7 @@ function createWindow () {
   
   //Иконка в трее
   const iconPath = path.join('./favicon.ico');
-  let tray = mainWindow.tray = new Tray(nativeImage.createFromPath(iconPath));
+  // let tray = mainWindow.tray = new Tray(nativeImage.createFromPath(iconPath));
   //Контекстное меню трея
   let template = [
     {
@@ -46,11 +46,13 @@ function createWindow () {
   tray.setContextMenu(ctxMenu);
   tray.setToolTip(prgName)
   //Набор разработчика
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
   mainWindow.once('ready-to-show', () => {
     autoUpdater.checkForUpdatesAndNotify();
   
   });
+  mainWindow.webContents.openDevTools();
+
 };
 
 
