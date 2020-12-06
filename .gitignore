@@ -2,3 +2,4 @@ electron-builder.yml
 *.yml
 node_modules
 /dist
+.bash_profile

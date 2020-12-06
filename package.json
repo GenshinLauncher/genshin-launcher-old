@@ -7,8 +7,8 @@
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "build": "electron-builder build --mac --win --publish never",
-"deploy": "electron-builder build --mac --win --publish always"
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
   },
   "repository": "https://github.com/GenshinLauncher/genshin-launcher.git",
   "keywords": [
