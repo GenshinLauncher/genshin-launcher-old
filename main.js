@@ -32,7 +32,7 @@ function createWindow () {
   
   //Иконка в трее
   const iconPath = path.join('./favicon.ico');
-  // let tray = mainWindow.tray = new Tray(nativeImage.createFromPath(iconPath));
+  let tray = mainWindow.tray = new Tray(nativeImage.createFromPath(iconPath));
   //Контекстное меню трея
   let template = [
     {
