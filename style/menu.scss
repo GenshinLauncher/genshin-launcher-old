@@ -1,0 +1,133 @@
+#menu {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 50px;
+    background: rgba(13, 13, 13, 0.884);
+    backdrop-filter: blur(20px);
+    user-select: none;
+
+    #dragmenu {
+        position: fixed;
+        left: 200px;
+        -webkit-app-region:drag;
+        width: calc(100% - 321px);
+        height: 100%;
+    }
+    #menu-logo {
+        float: left;
+        background-image: url(../../favicon.png);
+        margin-top: 6px;
+        margin-left: 40px;
+        height: 34px;
+        width: 81px;
+        background-size: contain ;
+        background-repeat: no-repeat;
+    }
+    #burger-menu {
+        float: left;
+        margin-top: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+        #line {
+            max-width: 40px;
+            height: 1px;
+            margin-top: 10px;
+            background-color: white;
+            transition: .2s;
+        }
+        .line1 {
+            width: 20px;
+        }
+        .line2 {
+            width: 30px;
+        }
+        .line3 {
+            width: 40px;
+        }
+    }
+    #burger-menu:hover .line1 {
+        width: 23px;
+        background-color:#ffb9b9 ;
+    }
+    #burger-menu:hover .line2 {
+            width: 33px;
+            background-color:#ffb9b9 ;
+    }
+    #burger-menu:hover .line3 {
+    
+            background-color:#ffb9b9 ;
+    }
+    .burder-menu-active {
+        .line1, .line2, .line3 {
+            width: 40px;
+        }
+    }
+    #window-controls {
+        float: right;
+        z-index: 99;
+        position: fixed;
+        top: 18px;
+        right: 40px;
+        .button {
+            height: 15px;
+            width: 15px;
+            border-radius: 999px;
+            background-color: white;
+            float: right;
+            transition: 0.5s;
+            cursor: pointer;
+            }:hover{
+                filter: contrast(0.2);
+        }
+        #close-button {background-color: #F93C3C; }
+          
+        #min-button {background-color: #CBCBCB;    margin-right: 15px;}
+
+    }
+
+}
+.pod-menu {
+    z-index: 98;
+    position: fixed;
+    height: 100%;
+    width: 400px;
+    left: -400px; 
+    transition: 0.5s;
+    float: left;
+    text-transform: uppercase;
+    color: white;
+}
+
+.pod-menu li {width: 100%;
+    height: 60px;
+    text-align: left 10%;
+    padding-left: 30px;
+    padding-top: 16px;
+    font-size: 24px;
+    list-style: none;
+
+}
+
+.pod-menu li:hover {background: linear-gradient(90deg, #3cccf9 28%, rgba(13, 13, 13, 0) 100%);;}
+.pod-menu ul a {text-decoration: none; color: white;}
+.menu-main-info {
+    font-size: 13px;
+position: absolute;
+bottom: 0;
+margin-bottom: 42px;
+text-align: center;
+}
+.menu-main-info a {color: #3cccf9;}
+
+
+.menu-bg-blur {
+    transition: 1s;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    left: -100%;
+    background: linear-gradient(90deg, rgba(13, 13, 13, 0.95) 35%, rgba(13, 13, 13, 0) 100%)
+}

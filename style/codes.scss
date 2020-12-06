@@ -1,0 +1,44 @@
+$mainColor: #3cccf9;
+
+.code-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.459);
+    backdrop-filter: blur(2px);
+}
+#app{
+    color: white;
+    overflow: hidden;
+
+}
+#code-block{
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    max-width: 1000px;
+    text-align: center;
+    font-size: 40px;
+    overflow-x: scroll;
+}
+#code-block::-webkit-scrollbar {
+    width: 2px;
+} 
+#code-block::-webkit-scrollbar-thumb {
+    background-color: $mainColor;
+}
+h1,h2 {
+    user-select: none;
+    padding-bottom: 30px;
+}
+.actual-code h1 {
+    color: $mainColor;
+}
+span#promocodes {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 20px;
+    border-radius: 10px;
+}

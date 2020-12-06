@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Genshin Launcher</title>
+    <link rel="stylesheet" href="../style/css/style.css">
+    <link rel="stylesheet" href="../style/css/menu.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://genshinlauncher.github.io/info.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <link rel="stylesheet" href="../style/css/codes.css">
+  </head>
+  <body>
+<div id="js-menu"></div>
+
+    <div id="app">
+      <div class="code-bg">
+        <div id="code-block">
+          <div class="actual-code">
+            <h1>Актуальный код</h1>
+            <span id="promocodes" ></span>
+          </div>
+          <div id="promocodes" class="other-codes" style="margin-top: 50px;">
+            <h2>Остальные коды</h2>
+
+            <span id="promocodes" style="margin-bottom: 100px;">
+            </span>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        $('.other-codes>span').html(`
+          ${promocodes.other}
+        `);
+        let actualcode = promocodes.actual;
+      if (actualcode == null){
+        $(".actual-code>span").html(`
+            Кодов нету
+          `)
+      } else {
+        $(".actual-code>span").html(`
+            ${actualcode}
+          `)
+      }
+
+    </script>
+    <script src="../src/script.js"></script>
+    <script src="../renderer.js"></script> 
+  </body>
+</html>

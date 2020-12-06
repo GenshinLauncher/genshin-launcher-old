@@ -1,0 +1,48 @@
+{
+  "name": "genshin-launcher",
+  "version": "1.0.0",
+  "description": "Genshin Impact launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build": "electron-builder build --mac --win --publish never",
+"deploy": "electron-builder build --mac --win --publish always"
+  },
+  "repository": "https://github.com/GenshinLauncher/genshin-launcher.git",
+  "keywords": [
+    "Genshin Impact",
+    "GH",
+    "MMORPG",
+    "Anime"
+  ],
+  "author": "TheFunnyDay",
+  "license": "",
+  "devDependencies": {
+    "electron": "^9.1.1",
+    "electron-builder": "^22.9.1",
+    "electron-packager": "^15.0.0"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.3",
+    "electron-pug": "^2.0.0",
+    "electron-reload": "^1.5.0",
+    "electron-updater": "^4.3.5",
+    "is-core-module": "^2.1.0",
+    "jquery": "^3.5.1",
+    "json-utils": "^0.1.0",
+    "jsonfile": "^4.0.0",
+    "yarn": "^1.22.10"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "productName": "Genshin Launcher",
+    "target": "NSIS",
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "icon": "/favicon.ico"
+  }
+}
