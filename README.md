@@ -1,5 +1,5 @@
 # Genshin launcher (unofficial)
-##### [English](https://github.com/GenshinLauncher/genshin-launcher/blob/master/readmeeng.md)
+##### [English](https://github.com/GenshinLauncher/genshin-launcher/blob/master/READMEENG.md)
 
 [Genshin Launcher](https://github.com/GenshinLauncher/genshin-launcher) - это сторонний лаунчер для игры Genshin Impact с небольшими дополнениями.
 
