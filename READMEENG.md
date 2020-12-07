@@ -1,5 +1,5 @@
 # Genshin launcher (unofficial)
-##### [Russian](https://github.com/GenshinLauncher/genshin-launcher/blob/master/readme.md)
+##### [Russian](https://github.com/GenshinLauncher/genshin-launcher/blob/master/README.md)
 
 [Genshin Launcher](https://github.com/GenshinLauncher/genshin-launcher) - This is a third party launcher for the Genshin Impact game with some minor additions.
 
