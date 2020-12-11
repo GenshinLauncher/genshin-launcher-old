@@ -45,7 +45,11 @@ const path = require('path');
 
 //Меню
 $("#js-menu").html(`
-<div class="menu-bg-blur"></div>
+<div class="menu-bg-blur">
+    <div class="menu-bg-close">
+ </div>
+ <div class="red-bg"></div>
+</div>
 
 <div id="menu">
     <div id="dragmenu"></div>
@@ -86,6 +90,7 @@ $("#js-menu").html(`
         <li><a href="https://forms.gle/BryYMYjkNoeZ9smP9" id="link-view" style="padding-right:0;" target="_blank">сообщить об ошибке</li></a>
 </ul>
 `);
+//Закрытие меню через бургер 
 document.querySelector('#burger-menu').addEventListener('click', function (e) {
   e.preventDefault();
   if (this.classList.contains('.burger-active')) {
@@ -99,6 +104,8 @@ document.querySelector('#burger-menu').addEventListener('click', function (e) {
       document.querySelector('.menu-bg-blur').style.opacity =  '0';
       document.querySelector('.menu-bg-blur').style.backdropFilther =  'blur(0px)';
       document.querySelector('.menu-bg-blur').style.left =  '-100%';
+     
+
   }
   else {
       this.classList.add('.burger-active');
@@ -111,9 +118,42 @@ document.querySelector('#burger-menu').addEventListener('click', function (e) {
       document.querySelector('.line1').style.backgroundColor =  'rgb(0, 110, 255)';
       document.querySelector('.line2').style.backgroundColor =  'rgb(0, 110, 255)';
       document.querySelector('.line3').style.backgroundColor =  'rgb(0, 110, 255)';
+ 
+
+
+
   }
 });
+//Закрытие меню через bg
+document.querySelector('.menu-bg-close').addEventListener('click', function (e) {
+    e.preventDefault();
+    if (this.classList.contains('.burger-active')) {
+        this.classList.remove('.burger-active');
+        document.querySelector('.pod-menu').style.left = "-400px";
+        document.querySelector('.line1').style.width =  '';
+        document.querySelector('.line2').style.width =  '';
+        document.querySelector('.line1').style.backgroundColor =  '';
+        document.querySelector('.line2').style.backgroundColor =  '';
+        document.querySelector('.line3').style.backgroundColor =  '';
+        document.querySelector('.menu-bg-blur').style.opacity =  '0';
+        document.querySelector('.menu-bg-blur').style.backdropFilther =  'blur(0px)';
+        document.querySelector('.menu-bg-blur').style.left =  '-100%';
 
+    }
+    else {
+        this.classList.add('.burger-active');
+        document.querySelector('.menu-bg-blur').style.opacity =  '100%';
+        document.querySelector('.menu-bg-blur').style.backdropFilther =  'var(--blur20)';
+        document.querySelector('.menu-bg-blur').style.left =  '0%';
+        document.querySelector('.pod-menu').style.left = "0px";
+        document.querySelector('.line1').style.width =  '40px';
+        document.querySelector('.line2').style.width =  '40px';
+        document.querySelector('.line1').style.backgroundColor =  'rgb(0, 110, 255)';
+        document.querySelector('.line2').style.backgroundColor =  'rgb(0, 110, 255)';
+        document.querySelector('.line3').style.backgroundColor =  'rgb(0, 110, 255)';
+
+    }
+  });
 
 
 //открытие игры

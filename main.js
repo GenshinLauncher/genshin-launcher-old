@@ -51,7 +51,7 @@ function createWindow () {
     autoUpdater.checkForUpdatesAndNotify();
   
   });
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
 };
 

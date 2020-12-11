@@ -1,6 +1,6 @@
 {
   "name": "genshin-launcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Genshin Impact launcher",
   "main": "main.js",
   "scripts": {
