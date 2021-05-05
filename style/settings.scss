@@ -1,0 +1,56 @@
+#app {
+    backdrop-filter: blur(10px);
+    background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20200924/2020092417575221063.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    #blured {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.5);
+        #settings {
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 100px;
+            .set {
+                margin-top: 30px;
+                input[type="text"], textarea {
+                    background-color: rgba(0, 0, 0, 0.5); 
+                    color: white;
+                    border: 0;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                input {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+            .see-bg{
+                width: 100%;
+                height: 150px;
+                border-radius: 10px;
+                background-color: black;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                // h1{text-align: center; position: relative; top: 60px;color: white;}
+            }
+
+            #save{
+                background-color: #3cccf9;
+                cursor: pointer;
+                user-select: none;
+                text-align: center;
+                width: 200px;
+                padding-top: 10px;
+                margin-top: 20px;
+                padding-bottom: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

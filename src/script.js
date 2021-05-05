@@ -1,9 +1,10 @@
-
-
+// localStorage.setItem("customAppBg", 'https://sun9-8.userapi.com/impf/iIRtBiIXdmVmUjzQX3Qe5PXb_RzJXv9XGQUdlw/vaVO6fZVCao.jpg?size=1080x672&quality=96&proxy=1&sign=70e9e50430e7d72a26ceae788e6e738f&type=album')
 //Скрипты-стили
 
+
+
 $("#app").css({
-    "background-image": `url(${openinfo.bgNow})`,
+    "background-image": `url(${localStorage.getItem("customAppBg") ||  openinfo.bgNow})`,
 })
 $("#main-char").css({
     "background-image": `url(${charNow[Math.floor(Math.random() * charNow.length)]})`, 

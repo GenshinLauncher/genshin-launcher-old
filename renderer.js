@@ -19,13 +19,13 @@ const path = require('path');
             restoreButton = document.getElementById('restore-button'),
             closeButton = document.getElementById('close-button');
         //Кнопка чтобы свернуть приложение 
-        minButton.addEventListener("click", event => {
+        minButton.addEventListener("click", () => {
             window = remote.getCurrentWindow();
             window.minimize();
         });
 
         //Кнопка чтобы закрыть приложение
-        closeButton.addEventListener("click", event => {
+        closeButton.addEventListener("click", () => {
             window = remote.getCurrentWindow();
             window.close();
         });
@@ -84,6 +84,8 @@ $("#js-menu").html(`
 <div style="height: 100px;"></div>
        <a href="./index.html"><li>главная</li></a>
         <a href="./codes.html"><li>промокоды</li></a>
+        <a href="./map.html"><li>карта</li></a>
+        <a href="./settings.html"><li>настройки</li></a>
         <li><a href="https://www.donationalerts.com/r/tfunnyday_"id="link-view" target="_blank">донат</a></li>
         <li><a href="https://thefunnyday.github.io/" id="link-view" target="_blank">автор</a></li>
        <!-- <a href="./thanks.html"><li>благодарность</li></a>--!>
@@ -153,18 +155,20 @@ document.querySelector('.menu-bg-close').addEventListener('click', function (e) 
         document.querySelector('.line3').style.backgroundColor =  'rgb(0, 110, 255)';
 
     }
-  });
+});
 
 
 //открытие игры
-$('.play').on('click', (event) => {
+$('.play').on('click', () => {
     var game = path.join(__dirname, '..', '..', '..', '..'  + "\\Genshin Impact Game\\GenshinImpact.exe");
     var open = shell.openItem || shell.openPath;
     open(game);
     window = remote.getCurrentWindow();
     window.minimize();
 });
-
+$('#save').on('click', () => {
+    remote.getCurrentWindow().reload();
+});
 $('body').on('click', 'a#link-view', (event) => {
     event.preventDefault();
     let link = event.target.href;

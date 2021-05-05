@@ -106,8 +106,9 @@ body {
         .play {
             width: 380px;
             height: 100px;
-            background-color: #3cccf9;
+            background-color: #00c3ff;
             border-radius: 10px;
+            backdrop-filter: blur(10px);
             margin-top: 20px;
             text-align: center;
             font-size: 48px;
@@ -123,44 +124,4 @@ body {
         }:hover.play{background-color: rgb(0, 110, 255);}
     }
     
-}
-
-#but-menu {
-    user-select: none;
-
-    z-index: 111;
-    position: fixed;
-    bottom: 0;
-    height: 30px;
-    width: 100%;
-    color: white;
-    background: rgba(13, 13, 13, 0.884);
-    backdrop-filter: blur(20px);
-    .vk-link {
-        float: left;
-        color: white;
-        margin-top:8px;
-        margin-left: 25px;
-        font-size: 12px;
-        a {
-            text-decoration: none;
-            color: white;
-        }
-    }
-    .dop-info {
-        float: right;
-        margin-right: 25px;
-        font-size: 12px;
-        margin-top: 8px;
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        span {
-            float: left;
-        }
-        .version {
-            margin-right: 15px;
-        }
-    }
 }
