@@ -46,12 +46,12 @@ function createWindow () {
   tray.setContextMenu(ctxMenu);
   tray.setToolTip(prgName)
   //Набор разработчика
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
   mainWindow.once('ready-to-show', () => {
     autoUpdater.checkForUpdatesAndNotify();
   
   });
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 
 };
 

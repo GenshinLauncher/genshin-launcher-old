@@ -1,207 +1,65 @@
 #menu {
-    position: fixed;
-    z-index: 99;
     width: 100%;
     height: 50px;
-    background: rgba(13, 13, 13, 0.89);
-    backdrop-filter: blur(20px);
-    user-select: none;
-    border-radius: 0px 0px 10px 10px;
-    #dragmenu {
-        position: fixed;
-        left: 200px;
-        -webkit-app-region:drag;
-        width: calc(100% - 321px);
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 20;
+    font-weight: 600;
+    #dragRegion {
         height: 100%;
-    }
-    #menu-logo {
+        width: 800px;
+        background-color: transparent;
         float: left;
+        -webkit-app-region: drag;
+    }
+    #logo {
         background-image: url(../../favicon.png);
-        margin-top: 6px;
-        margin-left: 40px;
-        height: 34px;
+        float: left;
         width: 81px;
-        background-size: contain ;
+        height: 36px;
+        margin-top: 7px;
+        margin-left: 55px;
+        background-size: contain;
         background-repeat: no-repeat;
     }
-    #burger-menu {
+    #navigate {
+        z-index: 21;
         float: left;
-        margin-top: 5px;
-        margin-left: 10px;
-        cursor: pointer;
-        #line {
-            max-width: 40px;
-            height: 1px;
-            margin-top: 10px;
-            background-color: white;
-            transition: .2s;
+        padding-top: 16.5px;
+        #codes {
+            float: left;
+            margin-left: 30px;
         }
-        .line1 {
-            width: 20px;
-        }
-        .line2 {
-            width: 30px;
-        }
-        .line3 {
-            width: 40px;
-        }
-    }
-    #burger-menu:hover .line1 {
-        width: 23px;
-        background-color:#ffb9b9 ;
-    }
-    #burger-menu:hover .line2 {
-            width: 33px;
-            background-color:#ffb9b9 ;
-    }
-    #burger-menu:hover .line3 {
+        #map {
+            float: left;
+            margin-left: 20px;
     
-            background-color:#ffb9b9 ;
-    }
-    .burder-menu-active {
-        .line1, .line2, .line3 {
-            width: 40px;
         }
     }
     #window-controls {
         float: right;
-        z-index: 99;
-        position: fixed;
-        top: 18px;
-        right: 40px;
+        padding: 14px 25px 0px 0px;
         .button {
-            height: 15px;
-            width: 15px;
-            border-radius: 999px;
-            background-color: white;
             float: right;
-            transition: 0.5s;
-            cursor: pointer;
-            }:hover{
-                filter: contrast(0.2);
+            border-radius: 100%;
+            width: 20px;
+            margin-left: 10px;
+            padding: 10px;
+            height: 20px;
+            background: red;
         }
-        #close-button {background-color: #F93C3C; }
-          
-        #min-button {background-color: #CBCBCB;    margin-right: 15px;}
-
-    }
-    
-
-}
-#but-menu {
-    user-select: none;
-
-    z-index: 111;
-    position: fixed;
-    bottom: 0;
-    height: 30px;
-    width: 100%;
-    color: white;
-    background: rgba(13, 13, 13, 0.89);
-    backdrop-filter: blur(20px);
-    .vk-link {
-        float: left;
-        color: white;
-        margin-top:8px;
-        margin-left: 25px;
-        font-size: 12px;
-        a {
-            text-decoration: none;
-            color: white;
+        #close-button {
+            background-color: red;
+            &:hover {
+                background-color: rgb(163, 0, 0);
+            }
+        }
+        #min-button {
+            background-color: grey;
+            &:hover {
+                background-color: rgb(88, 88, 88);
+            }
         }
     }
-    .dop-info {
-        float: right;
-        margin-right: 25px;
-        font-size: 12px;
-        margin-top: 8px;
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        span {
-            float: left;
-        }
-        .version {
-            margin-right: 15px;
-        }
-    }
-}
-.pod-menu {
-    z-index: 98;
-    position: fixed;
-    height: 100%;
-    width: 400px;
-    left: -400px; 
-    transition: 0.5s;
-    float: left;
-    text-transform: uppercase;
-    overflow: hidden;
-    color: white;
-}
-
-.pod-menu li {width: 100%;
-    height: 60px;
-    text-align: left 10%;
-    padding-left: 30px;
-    padding-top: 16px;
-    font-size: 24px;
-    list-style: none;
-
-}
-.pod-menu li #link-view {padding-right: 280px;}
-
-.pod-menu li:hover {background: linear-gradient(90deg, #3cccf9 28%, rgba(13, 13, 13, 0) 100%);;}
-.pod-menu ul a {text-decoration: none; color: white; width: 100%; height: 100%;}
-.menu-main-info {
-    font-size: 13px;
-position: absolute;
-bottom: 0;
-margin-bottom: 42px;
-text-align: center;
-}
-.menu-main-info a {color: #3cccf9;}
-
-
-.menu-bg-blur {
-    transition: 1s;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    opacity: 100%;
-    left: -100%;
-    background: linear-gradient(90deg, rgba(13, 13, 13, 0.95) 35%, rgba(13, 13, 13, 0.5) 100%);
-}
-
-.menu-bg-close {
-    z-index: 99;
-    float: right;
-    width: 15%;
-    height: 100%;
-    background: url(../../src/img/cross-close.svg);
-    background-position: 50% 50%;
-    background-size:  40%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    
-}.menu-bg-close:hover{
-    background: url(../../src/img/cross-close-red.svg);
-    background-position: 50% 50%;
-    background-size:  40%;
-    background-repeat: no-repeat;
-
-}
-.red-bg{
-    z-index: -1;
-    float: right;
-    left: 192px;
-    position: relative;
-    width: 95px;
-    height: 100%;
-    background:none;
-}
-.menu-bg-close:hover  + .red-bg{
-    background: linear-gradient(270deg, rgba(255, 43, 43, 0.719) 10%, rgba(13, 13, 13, 0) 100%);
-    transition: 1s;
 }

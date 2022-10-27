@@ -33,41 +33,53 @@
   </head>
   <body>
     <div id="js-menu">
-    
-    </div>
-    <div id="notification" class="hidden">
-      <p id="message"></p>
-      <button id="close-button" onClick="closeNotification()">
-        Close
-      </button>
-      <button id="restart-button" onClick="restartApp()" class="hidden">
-        Restart
-      </button>
-    </div>
-    <div id="app">
-      <div id="main-char">
-        <h1 id="big-update">
-          Большое обновление:</br>
-          <span class="big-update-name">
-
-          </span>
+      <div id="menu">
+        <div id="logo"></div>
+          <div id="navigate">
+            <a href="./codes.html">
+              <p id="codes">ПРОМОКОДЫ</p>
+            </a>
+            <a href="./map.html">
+              <p id="map">КАРТА</p>
+            </a>
+          </div>
+          <div id="dragRegion"></div>
+          <div id="window-controls">
+              <div class="button" id="close-button">
           
-        </h1>
-
+              </div>
+            <div class="button" id="min-button">
+            </div>
       </div>
-        <div id="right-nav-menu">
-          <div class="news">
-            <iframe src="https://genshinlauncher.github.io/update.html"   frameborder="0" ></iframe>
-          </div>
-          <div class="codes-small">
-            <span></span>
-          </div>
-          <div class="play">
-            <span>ИГРАТЬ</span>
-          </div>
-      </div>
-
     </div>
+    <div id="charPresent"></div>
+    <div id="userNavigator"> 
+      <div id="update"></div>
+      <div class="buttons" id="characters">
+        <p>Персонажи</p>
+        <div id="background"></div>
+      </div>
+      <div class="buttons" id="reward">
+        <p>Награды</p>
+      </div>
+      <div id="map"></div>
+      <div id="code">
+        <p>FREEGEMES74</p>
+      </div>
+      <div id="play">
+        <p>ИГРАТЬ</p>
+      </div>
+    </div>
+    <div id="footer">
+      <a href="https://github.com/GenshinLauncher/GenshinLauncher.github.io" class="link-view">
+        <p>GITHUB</p>
+      </a>
+      <a href="">
+        <p>COPYRIGHT</p>
+      </a>
+    </div>
+
+    </body>
 
     <script src="../src/script.js"></script>
     <script src="../renderer.js"></script> 
